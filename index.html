@@ -8,15 +8,84 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>BRS Renovation</title>
+    <style>
+        #header {
+            height: 144px;
+            background: #F3F4FA;
+        }
+        #header .container-fluid {
+            padding: 40px 150px 0 150px;
+        }
+        #header .contact i {
+            color: #4A5C7A;
+            font-size: 42px;
+            line-height: 48px;
+        }
+        #header .option {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            display: block;
+        }
+        #header .value {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            display: block;
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col">find us</div>
-                <div class="col">call us today</div>
-                <div class="col">email us</div>
-                <div class="col">social</div>
+                <div class="col-2 contact">
+                    <div class="row">
+                        <div class="col-2"><i class="far fa-map-marker-alt"></i></div>
+                        <div class="col">
+                            <span class="option">FIND US</span>
+                            <span class="value">22B, Brooklyin, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 contact">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-phone"></i></div>
+                        <div class="col">
+                            <span class="option">CALL US TODAY</span>
+                            <span class="value">+000-2415-145</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 contact">
+                    <div class="row">
+                        <div class="col-2"><i class="far fa-envelope"></i></div>
+                        <div class="col">
+                            <span class="option">EMAIL US NOW</span>
+                            <span class="value">brsrennovation@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-right">
+                    <img src="assets/images/image 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="site-logo"> <img src="assets/images/BRS.png" alt=""></div>
+                <div class="site-nav">
+                    <ul class="navbar navmenu">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -109,7 +178,7 @@
                                 <div class="d-flex flex-row justify-content-center">
                                     <img src="assets/images/icon-buildings 1.png" alt="">
                                     <div class="p-2">
-                                        <span class="values">202</span>
+                                        <span class="values"><span class="counter" data-target="216">0</span></span>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -121,7 +190,7 @@
                                 <div class="d-flex flex-row justify-content-center">
                                     <img src="assets/images/icon-paper-stamp 1.png" alt="">
                                     <div class="p-2">
-                                        <span class="values">123</span>
+                                        <span class="values"><span class="counter" data-target="123">0</span></span>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -133,7 +202,7 @@
                                 <div class="d-flex flex-row justify-content-center">
                                     <img src="assets/images/icon-plus-arrow 1.png" alt="">
                                     <div class="p-2">
-                                        <span class="values">24+</span>
+                                        <span class="values"><span class="counter" data-target="24">0</span>+</span>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -145,7 +214,7 @@
                                 <div class="d-flex flex-row justify-content-center">
                                     <img src="assets/images/icon-buildings 2.png" alt="">
                                     <div class="p-2">
-                                        <span class="values">87%</span>
+                                        <span class="values"><span class="counter" data-target="87">0</span>%</span>
                                     </div>
                                 </div>
                                 <div class="divider"></div>
@@ -363,49 +432,93 @@
             <button class="button-primary button">View more</button>
         </div>
     </div>
-    <div style="height: 100px;"></div>
+    <div id="footer">
+        <div id="newsletter">
+            <div class="container shadow">
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="assets/images/icon-envelope-1 1.png">
+                    </div>
+                    <div class="col-md-8" style="padding-left:35px">
+                        <span class="title">Sign Up For <span class="highlight">FREE</span> Consultation</span>
+                        <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper</span>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="button-primary button">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="footer-title">BSR</p>
+                    <div class="row">
+                        <div class="col-1"><i class="far fa-building"></i></div>
+                        <div class="col"><span class="list-items">Detheme Headquarter</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="fas fa-map-pin"></i></div>
+                        <div class="col"><span class="list-items">1428 Callison Laney Buoy Building 201/VRY Virginia, VA 22902</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="fas fa-phone"></i></div>
+                        <div class="col"><span class="list-items">+62 9282739-44-539</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="far fa-envelope"></i></div>
+                        <div class="col"><span class="list-items">contact@example.com</span></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Useful Links</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Recent Posts</p>
+                    <ul>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Recent Posts</p>
+                    <p>Subscribe to our newsletter for discounts, specials, and more! We value your privacy.</p>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" class="input-field">
+                    <button class="button button-primary">view more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col">© Copyright  2021. All Right Reserved.</div>
+                <div class="col social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-<style>
-    #header {
-        height: 144px;
-    }
-    #article {
-        text-align: center;
-        padding-top: 100px
-    }
-    .blog-row {
-        padding-top: 80px;
-    }
-    .blog-single {
-        text-align: left;
-        margin-bottom: 30px
-    }
-    .blog-single img {
-        width: 100%;
-    }
-    .blog-single .date {
-        padding-top: 20px;
-        color: #C78513;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.13em;
-    }
-    .blog-single .title {
-        color: #171732;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 42px;
-    }
-    .blog-single .description{
-        color: #424662;
-        font-size: 16px;
-        line-height: 19px
-    }
-    .blog-imageless .title {
-        font-size: 24px;
-        line-height: 34px;
-    }
-</style>
