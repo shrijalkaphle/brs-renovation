@@ -128,7 +128,7 @@ body {
     position: relative;
     padding-bottom: 180px;
 }
-.description {
+.service-single .description {
     position: absolute;
     background: white;
     width: 313px;
@@ -140,17 +140,17 @@ body {
     transform-origin: left top;
     padding-top: 25px
 }
-.description:hover {
+.service-single .description:hover {
     background: #E5E5E5;
     top: 275px
 }
-.description .heading {
+.service-single .description .heading {
     font-size: 16px;
     line-height: 19px;
     color: #171732;
     padding-bottom: 0;
 }
-.description .subtitle {
+.service-single .description .subtitle {
     font-size: 16px;
     line-height: 19px;
     color: #171732;

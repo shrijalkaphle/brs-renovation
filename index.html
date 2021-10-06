@@ -315,7 +315,54 @@
             </div>
         </div>
     </div>
-    <div id="article"></div>
+    <div id="article">
+        <div class="container">
+            <p class="subheading">FEATURED ARTICLES</p>
+            <p class="heading">Read Pro <span class="highlight">Tips & Tricks</span> In Our Blog</p>
+            <div class="row blog-row">
+                <div class="col-md-4">
+                    <div class="blog-single">
+                        <img src="assets/images/Rectangle 24.png">
+                        <p class="date">12th Jan 2021</p>
+                        <p class="title">How VOC Affects Your Indoor Air Quality</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <button class="button-secondary button">READ MORE</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-single">
+                        <img src="assets/images/Rectangle 22.png">
+                        <p class="date">12th Jan 2021</p>
+                        <p class="title">Time to Get Your House Clean and in Order</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                        <button class="button-secondary button">READ MORE</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-single blog-imageless">
+                        <p class="title">Time to Get Your House Clean and in Order</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                        <p class="date"><u>Read in 3 minutes</u></p>
+                    </div>
+                    <div class="blog-single blog-imageless">
+                        <p class="title">Time to Get Your House Clean and in Order</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                        <p class="date"><u>Read in 3 minutes</u></p>
+                    </div>
+                    <div class="blog-single blog-imageless">
+                        <p class="title">Time to Get Your House Clean and in Order</p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                        <p class="date"><u>Read in 3 minutes</u></p>
+                    </div>
+                </div>
+            </div>
+            <button class="button-primary button">View more</button>
+        </div>
+    </div>
     <div style="height: 100px;"></div>
 </body>
 </html>
@@ -324,5 +371,41 @@
     #header {
         height: 144px;
     }
-    
+    #article {
+        text-align: center;
+        padding-top: 100px
+    }
+    .blog-row {
+        padding-top: 80px;
+    }
+    .blog-single {
+        text-align: left;
+        margin-bottom: 30px
+    }
+    .blog-single img {
+        width: 100%;
+    }
+    .blog-single .date {
+        padding-top: 20px;
+        color: #C78513;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.13em;
+    }
+    .blog-single .title {
+        color: #171732;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .blog-single .description{
+        color: #424662;
+        font-size: 16px;
+        line-height: 19px
+    }
+    .blog-imageless .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
 </style>
