@@ -1,0 +1,19 @@
+.breadcrumbs ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  font-size: 14px;
+
+  li{
+      display: inline-block;
+  }
+
+  li::after{
+      margin: 0 10px;
+      content: ' \003E ';
+  }
+
+  li:last-of-type:after{
+      content: '';
+  }
+}

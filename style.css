@@ -6722,10 +6722,32 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-weight: 400; }
 
+.page-content {
+  margin-bottom: 120px; }
+
 .page-header {
-  height: 98px;
-  background-color: #173459;
-  color: white; }
+  height: 400px;
+  background-color: rgba(22, 50, 86, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.breadcrumbs ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  font-size: 14px; }
+  .breadcrumbs ul li {
+    display: inline-block; }
+  .breadcrumbs ul li::after {
+    margin: 0 10px;
+    content: ' \003E '; }
+  .breadcrumbs ul li:last-of-type:after {
+    content: ''; }
 
 @font-face {
   font-family: "Barlow Regular";

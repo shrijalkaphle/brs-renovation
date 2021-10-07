@@ -1,5 +1,11 @@
 .page-header{
-    height: 98px;
-    background-color: lighten($primary-gray, 0.7);
+    height: 400px;
+    background-color: rgba($primary-gray, 0.7);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
