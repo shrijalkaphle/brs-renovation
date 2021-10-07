@@ -17,3 +17,7 @@ counters.forEach(counter => {
 
     updateCount()
 })
+
+$('#navigationToogle').on('click', () => {
+    $('.mobilemenu').slideToggle()
+})
