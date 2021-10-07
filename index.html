@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jqyery.min.js"></script>
     <title>BRS Renovation</title>
     <style>
         #header {
@@ -34,41 +35,125 @@
             display: block;
             padding-top: 10px;
         }
+        #navigationToogle {
+            display: none;
+            font-size: 32px;
+            line-height: 100px;
+            font-weight: 300;
+        }
+        .mobilemenu {
+            display: none;
+            background: #FFFFFF;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .mobilemenu .active, .mobilemenu .active .nav-link {
+            color: #F6AA26;
+            border: 0;
+        }
+        .social-circle {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 999px;
+            margin-left: 20px;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+        @media (max-height: 900px) {
+            #header {
+                display:block
+            }
+            #header .container-fluid {
+                padding: 0
+            }
+            #header .map, #header .email {
+                display: none;
+            }
+            #header .social {
+                margin-top: 20px;
+                text-align: center;
+            }
+            #header .phone {
+                margin-top: 20px;
+            }
+            .phone .icon {
+                text-align: right;
+            }
+            #navigationToogle{
+                display: block;
+            }
+            .navmenu {
+                display: none;
+            }
+            .button {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            #services .title {
+                padding: 100px 10px 0 10px !important;
+            }
+            #project .heading {
+                margin: 0;
+            }
+            #project .two-column {
+                margin: 60px 0
+            }
+            #project .three-column {
+                margin: 60px 0
+            }
+            .project-single {
+                margin-bottom: 20px;
+            }
+            .footer-title {
+                padding-top: 30px
+            }
+            #footer .input-field {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <div id="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2 contact">
+                <div class="col-md-2 contact map">
                     <div class="row">
-                        <div class="col-2"><i class="far fa-map-marker-alt"></i></div>
+                        <div class="col-2 icon"><i class="far fa-map-marker-alt"></i></div>
                         <div class="col">
                             <span class="option">FIND US</span>
                             <span class="value">22B, Brooklyin, USA</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-2 contact">
+                <div class="col-md-2 contact phone">
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-phone"></i></div>
-                        <div class="col">
+                        <div class="col-5 icon"><i class="fas fa-phone"></i></div>
+                        <div class="col-7">
                             <span class="option">CALL US TODAY</span>
                             <span class="value">+000-2415-145</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 contact">
+                <div class="col-md-3 contact email">
                     <div class="row">
-                        <div class="col-2"><i class="far fa-envelope"></i></div>
+                        <div class="col-2 icon"><i class="far fa-envelope"></i></div>
                         <div class="col">
                             <span class="option">EMAIL US NOW</span>
                             <span class="value">brsrennovation@gmail.com</span>
                         </div>
                     </div>
                 </div>
-                <div class="col text-right">
-                    <img src="assets/images/image 1.png" alt="">
+                <div class="col-md-5 social">
+                    <div class="social-circle"><i class="fab fa-facebook"></i></div>
+                    <div class="social-circle"><i class="fab fa-twitter"></i></div>
+                    <div class="social-circle"><i class="fab fa-youtube"></i></div>
+                    <div class="social-circle"><i class="fab fa-linkedin"></i></div>
                 </div>
             </div>
         </div>
@@ -78,6 +163,7 @@
             <div class="d-flex justify-content-between">
                 <div class="site-logo"> <img src="assets/images/BRS.png" alt=""></div>
                 <div class="site-nav">
+                    <i class="fas fa-bars" id="navigationToogle"></i>
                     <ul class="navbar navmenu">
                         <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -88,6 +174,13 @@
                 </div>
             </div>
         </div>
+        <ul class="mobilemenu">
+            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
     </div>
     <div id="about">
         <div class="content">
@@ -325,7 +418,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row three-column">
                 <div class="col-md-4">
                     <div class="project-single">
                         <img src="assets/images/apartment.png">
@@ -498,7 +591,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p class="footer-title">Recent Posts</p>
+                    <p class="footer-title">Newsletter</p>
                     <p>Subscribe to our newsletter for discounts, specials, and more! We value your privacy.</p>
                     <input type="email" name="email" id="email" placeholder="Enter your Email" class="input-field">
                     <button class="button button-primary">view more</button>
@@ -509,8 +602,8 @@
     <div id="copyright">
         <div class="container">
             <div class="row">
-                <div class="col">© Copyright  2021. All Right Reserved.</div>
-                <div class="col social">
+                <div class="col-md-6">© Copyright  2021. All Right Reserved.</div>
+                <div class="col-md-6 social">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-youtube"></i>
@@ -522,3 +615,8 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+<script>
+    $('#navigationToogle').on('click', () => {
+        $('.mobilemenu').slideToggle()
+    })
+</script>

@@ -7,9 +7,11 @@
 
 body {
     font-family: 'Barlow Regular', sans-serif !important;
+    width: 100%;
+    overflow-x: hidden;
 }
 #navbar {
-    height: 100px;
+    height: 100px !important;
     position: sticky;
     top: 0;
     left: 0;
@@ -23,7 +25,7 @@ body {
     margin: 0;
 }
 .site-logo {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 .nav-item {
     padding:0;
@@ -74,7 +76,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    height: calc(100vh - 144px);
+    height: 100%;
     background: rgba(9, 30, 58, 0.7);
     overflow: hidden;
 }
@@ -106,7 +108,7 @@ body {
     color: #DADBE7;
 }
 .button {
-    margin-top: 55px;
+    margin-top: 35px;
     padding: 20px 35px;
     border-radius: 999px;
     text-transform: uppercase;
@@ -501,6 +503,7 @@ li a {
 }
 
 @media (max-height: 900px) {
+    
     #about {
         height: 120vh;
     }
@@ -548,8 +551,7 @@ li a {
     #consult .container-fluid .content {
         width: 100% !important;
         text-align: center;
-        padding: 30px !important;
-        padding-top: 100px !important
+        padding:150px 30px !important;
     }
     #newsletter {
         text-align: center;
@@ -557,5 +559,12 @@ li a {
     }
     #footer .footer-container {
         padding-top: 120px;
+    }
+    #copyright {
+        text-align: center;
+    }
+    #copyright .social {
+        margin-top: 10px;
+        text-align: center;
     }
 }
