@@ -1,0 +1,570 @@
+@font-face {
+  font-family: "Barlow Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Barlow Regular"),
+    url("../fonts/Barlow/Barlow-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "Barlow Regular", sans-serif !important;
+  width: 100%;
+  overflow-x: hidden;
+}
+#navbar {
+  height: 100px !important;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: white;
+}
+.navmenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.site-logo {
+  margin-top: 30px;
+}
+.nav-item {
+  padding: 0;
+  margin-left: 30px;
+  padding-top: 30px;
+  height: 100px;
+}
+.nav-item.active {
+  border-bottom: 4px solid #f6aa26;
+}
+.nav-link {
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #c78513;
+  font-family: "Barlow Regular", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+}
+.heading {
+  font-family: "Barlow Regular", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+.subtitle {
+  font-family: "Barlow Regular", sans-serif;
+  padding: 30px 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #424662;
+}
+#about {
+  position: relative;
+  height: calc(100vh - 144px - 80px);
+  background-image: url("../images/Rectangle\ 6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#about .content {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(9, 30, 58, 0.7);
+  overflow: hidden;
+}
+.content .container {
+  padding-top: 85px;
+}
+#about .subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Barlow Regular", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  padding-top: 85px;
+}
+#about .heading {
+  font-family: "Barlow Regular", sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 86px;
+  color: #ffffff;
+}
+#about .subtitle {
+  font-family: "Barlow Regular", sans-serif;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #dadbe7;
+}
+.button {
+  margin-top: 35px;
+  padding: 20px 35px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-family: "Barlow Regular", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  letter-spacing: 0.13em;
+}
+.button-primary {
+  background-color: #f6aa26;
+  border: 0;
+}
+.button-primary:hover {
+  background-color: #c78513;
+}
+.button-secondary {
+  background-color: transparent;
+  border: 1px solid #c78513;
+  color: #c78513;
+}
+#about .button-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.button-secondary:hover {
+  background-color: #c78513;
+  color: white;
+}
+#about .button-secondary:hover {
+  color: #c78513;
+  background: #fff;
+}
+
+#services {
+  text-align: center;
+}
+#services .title {
+  padding: 100px 100px;
+  padding-bottom: 0px;
+}
+.highlight {
+  color: #f6aa26;
+}
+.service-single {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 180px;
+}
+.service-single .description {
+  position: absolute;
+  background: white;
+  width: 313px;
+  height: 210px;
+  margin: auto;
+  top: 245px;
+  left: 25px;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left top;
+  padding-top: 25px;
+}
+.service-single .description:hover {
+  background: #e5e5e5;
+  top: 275px;
+}
+.service-single .description .heading {
+  font-size: 16px;
+  line-height: 19px;
+  color: #171732;
+  padding-bottom: 0;
+}
+.service-single .description .subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  color: #171732;
+  text-align: center;
+  padding: 19px;
+}
+#whatwedo {
+  position: relative;
+  margin-top: 100px;
+  background: #163256;
+  overflow: hidden;
+  color: white;
+}
+#whatwedo .placeholder-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+#whatwedo .container {
+  padding: 100px 0;
+}
+#whatwedo .subtitle {
+  color: white;
+}
+.facts {
+  width: 80%;
+  margin-top: 25px;
+}
+.facts .values {
+  color: #f6aa26;
+  font-size: 48px;
+  line-height: 58px;
+  padding-left: 17px;
+  padding-top: 30px;
+  font-weight: 600;
+}
+.facts .title {
+  padding-top: 15px;
+  color: #9497ab;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.divider {
+  height: 20px;
+  border-bottom: 2px solid #dadbe7;
+}
+#chooseus {
+  padding: 100px 0;
+}
+#chooseus img {
+  padding-top: 100px;
+}
+#chooseus .button {
+  margin-top: 0;
+}
+#chooseus .contact-info {
+  padding: 20px 0;
+}
+#chooseus .icon-circle {
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 12px;
+  background: #f6aa26;
+}
+#chooseus .icon-circle i {
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+}
+#chooseus .contact-info .option {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #9497ab;
+}
+#chooseus .contact-info .content {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #424662;
+}
+#project {
+  background: #f4f5fb;
+  padding: 100px 0;
+  padding-bottom: 250px;
+}
+#project .subheading {
+  text-align: center;
+}
+#project .heading {
+  margin: 0 15%;
+  text-align: center;
+}
+#project img {
+  width: 100%;
+  height: auto;
+}
+.two-column {
+  margin: 60px 30px;
+}
+.project-info {
+  padding: 30px;
+  background: white;
+}
+.project-info .title {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.project-info .comment {
+  text-transform: uppercase;
+  color: #9497ab;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.13em;
+}
+#consult {
+  position: relative;
+  background-image: url("../images/Rectangle\ 19.png");
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#consult .container-fluid {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 50, 86, 0.7);
+  padding: 0;
+}
+#consult p {
+  color: white;
+}
+#consult .content {
+  float: right;
+  width: 42%;
+  padding: 200px 200px 50px 5px;
+  padding-top: 200px;
+}
+#testimonial {
+  position: absolute;
+  top: -125px;
+  width: 100%;
+}
+#testimonial .container {
+  background: white;
+  height: 100%;
+  padding: 28px;
+}
+#testimonial .user-info {
+  text-align: center;
+}
+#testimonial .name {
+  padding-top: 25px;
+  display: block;
+  font-weight: 700;
+  line-height: 22px;
+}
+#testimonial .comment {
+  text-transform: uppercase;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.13em;
+  color: #9497ab;
+}
+#testimonial .quote {
+  color: #f6aa26;
+  padding-top: 100px;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  line-height: 24px;
+}
+#testimonial .content {
+  width: 100%;
+  padding: 5px;
+  padding-top: 50px;
+  color: #424662;
+  letter-spacing: 0.13em;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+#article {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+.blog-row {
+  padding-top: 80px;
+}
+.blog-single {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.blog-single img {
+  width: 100%;
+}
+.blog-single .date {
+  padding-top: 20px;
+  color: #c78513;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.13em;
+}
+.blog-single .title {
+  color: #171732;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+}
+.blog-single .description {
+  color: #424662;
+  font-size: 16px;
+  line-height: 19px;
+}
+.blog-imageless .title {
+  font-size: 24px;
+  line-height: 34px;
+}
+#footer {
+  position: relative;
+  background: #171732;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  color: #ffffff;
+}
+#footer #newsletter {
+  position: absolute;
+  width: 100%;
+  top: -83px;
+  z-index: 99;
+}
+#newsletter .button {
+  margin-top: 0;
+}
+#newsletter .container {
+  background: white;
+  height: 100%;
+  color: #000000;
+  padding: 35px;
+}
+#newsletter img {
+  margin-left: 30px;
+}
+#newsletter .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #171732;
+}
+#newsletter .subtitle {
+  color: #424662;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 0;
+}
+#footer .footer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+}
+#footer .row {
+  padding-top: 15px;
+}
+.list-items {
+  font-size: 14px;
+  line-height: 17px;
+}
+#footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul li {
+  padding-top: 15px;
+}
+li a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+}
+#footer .subtitle {
+  display: block;
+  padding-top: 10px;
+}
+.input-field {
+  border-radius: 30px;
+  padding: 12px 20px;
+  color: #000000;
+  border: 0;
+  outline: none;
+}
+#copyright {
+  background: #060618;
+  color: white;
+}
+#copyright .container {
+  padding: 35px 0;
+}
+#copyright .social {
+  text-align: right;
+  letter-spacing: 15px;
+}
+
+@media (max-height: 900px) {
+  #about {
+    height: 120vh;
+  }
+  #about .content {
+    height: 120vh;
+  }
+  #about img {
+    margin-top: 20px;
+  }
+  #about .subheading {
+    padding-top: 10px !important;
+  }
+  .heading {
+    font-size: 32px !important;
+    line-height: 34px !important;
+  }
+  .subheading {
+    font-size: 12px !important;
+  }
+  #whatwedo .placeholder-image {
+    display: none;
+  }
+  #whatwedo .container {
+    width: 95%;
+  }
+  .facts {
+    margin: auto;
+    padding-top: 20px;
+  }
+  #chooseus .subheading {
+    padding-top: 25px !important;
+  }
+  p {
+    text-align: center;
+  }
+  #project {
+    padding-bottom: 600px;
+  }
+  #testimonial {
+    top: -500px !important;
+  }
+  #testimonial .quote {
+    display: none;
+  }
+  #consult .container-fluid .content {
+    width: 100% !important;
+    text-align: center;
+    padding: 150px 30px !important;
+  }
+  #newsletter {
+    text-align: center;
+    top: -180px !important;
+  }
+  #footer .footer-container {
+    padding-top: 120px;
+  }
+  #copyright {
+    text-align: center;
+  }
+  #copyright .social {
+    margin-top: 10px;
+    text-align: center;
+  }
+}

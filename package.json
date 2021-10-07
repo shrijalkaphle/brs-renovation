@@ -1,0 +1,23 @@
+{
+  "name": "brs-renovation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-sass -w scss/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrijalkaphle/brs-renovation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrijalkaphle/brs-renovation/issues"
+  },
+  "homepage": "https://github.com/shrijalkaphle/brs-renovation#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
