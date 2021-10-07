@@ -1,0 +1,10 @@
+.company-summary-section__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.company-summary-section__heading{
+    min-height: 65px;
+    h4 {font-weight: bold;}
+}

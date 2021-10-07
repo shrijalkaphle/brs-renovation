@@ -1,0 +1,43 @@
+.contact-form__wrapper{
+    margin-top: 40px;
+    padding: 120px 0;
+    background-color: rgba($primary-gray, 0.7);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://kit.detheme.com/oakwood/wp-content/uploads/sites/67/2021/01/couple-with-blue-color-palette-thinking-about-reno-79VADK6.jpg');
+}
+
+.contact-form__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    margin: 40px 0;
+
+    label{
+        color: white;
+    }
+}
+
+form{
+    width: 100%;
+}
+
+input{
+    height: 44px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-form-row {
+    margin-bottom: 40px;
+}
+
+.contact-form-row:last-of-type{
+    margin-bottom: 0;
+}

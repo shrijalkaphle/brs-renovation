@@ -1,13 +1,27 @@
 @import 'abstracts/variables';
 
-@import 'vendors/fontawesome/fontawesome.scss';
+@import 'base/typography';
+
 @import 'vendors/fontawesome/solid.scss';
 @import 'vendors/fontawesome/brands.scss';
 @import 'vendors/fontawesome/regular.scss';
+@import 'vendors/fontawesome/light.scss';
+@import 'vendors/fontawesome/fontawesome.scss';
 
+@import 'layout/form';
 @import 'layout/basepage';
 
+@import 'components/icons';
+@import 'components/subtitle';
 @import 'components/pageheader';
 @import 'components/breadcrumbs';
 
+@import 'layout/companySummarySection';
+@import 'layout/contactForm';
+
 @import 'pages/home';
+@import 'pages/contact';
+
+.text-primary{
+    color: $primary-gold !important;
+}

@@ -1,3 +1,70 @@
+body {
+  color: #171732; }
+
+/*!
+ * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url("../fonts/webfonts/fontawesome/fa-solid-900.eot");
+  src: url("../fonts/webfonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900; }
+
+/*!
+ * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../fonts/webfonts/fontawesome/fa-brands-400.eot");
+  src: url("../fonts/webfonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+
+/*!
+ * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/webfonts/fontawesome/fa-regular-400.eot");
+  src: url("../fonts/webfonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 400; }
+
+/*!
+ * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: auto;
+  src: url("../fonts/webfonts/fontawesome/fa-light-300.eot");
+  src: url("../fonts/webfonts/fontawesome/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-light-300.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-light-300.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-light-300.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-light-300.svg#fontawesome") format("svg"); }
+
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+
 /*!
  * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Commercial License)
@@ -6674,56 +6741,34 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
-/*!
- * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 900;
-  font-display: auto;
-  src: url("../fonts/webfonts/fontawesome/fa-solid-900.eot");
-  src: url("../fonts/webfonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-solid-900.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-solid-900.svg#fontawesome") format("svg"); }
-
-.fa,
-.fas {
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900; }
-
-/*!
- * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Brands';
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url("../fonts/webfonts/fontawesome/fa-brands-400.eot");
-  src: url("../fonts/webfonts/fontawesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-brands-400.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-brands-400.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-brands-400.svg#fontawesome") format("svg"); }
-
-.fab {
-  font-family: 'Font Awesome 5 Brands'; }
-
-/*!
- * Font Awesome Pro 5.11.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Commercial License)
- */
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("../fonts/webfonts/fontawesome/fa-regular-400.eot");
-  src: url("../fonts/webfonts/fontawesome/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/webfonts/fontawesome/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fontawesome/fa-regular-400.woff") format("woff"), url("../fonts/webfonts/fontawesome/fa-regular-400.ttf") format("truetype"), url("../fonts/webfonts/fontawesome/fa-regular-400.svg#fontawesome") format("svg"); }
-
-.far {
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 400; }
+label {
+  display: block; }
 
 .page-content {
   margin-bottom: 120px; }
+
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 22px;
+  color: #F6AA26;
+  border: 1px solid #F6AA26; }
+  .circle-icon i {
+    font-size: 24px; }
+
+.primary-subtitle {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #F6AA26;
+  margin-bottom: 11px;
+  display: block; }
 
 .page-header {
   height: 400px;
@@ -6748,6 +6793,51 @@ readers do not read off random characters that represent icons */
     content: ' \003E '; }
   .breadcrumbs ul li:last-of-type:after {
     content: ''; }
+
+.company-summary-section__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0; }
+
+.company-summary-section__heading {
+  min-height: 65px; }
+  .company-summary-section__heading h4 {
+    font-weight: bold; }
+
+.contact-form__wrapper {
+  margin-top: 40px;
+  padding: 120px 0;
+  background-color: rgba(22, 50, 86, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://kit.detheme.com/oakwood/wp-content/uploads/sites/67/2021/01/couple-with-blue-color-palette-thinking-about-reno-79VADK6.jpg"); }
+
+.contact-form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.contact-form {
+  margin: 40px 0; }
+  .contact-form label {
+    color: white; }
+
+form {
+  width: 100%; }
+
+input {
+  height: 44px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none; }
+
+.contact-form-row {
+  margin-bottom: 40px; }
+
+.contact-form-row:last-of-type {
+  margin-bottom: 0; }
 
 @font-face {
   font-family: "Barlow Regular";
@@ -7294,3 +7384,27 @@ li a {
   #copyright .social {
     margin-top: 10px;
     text-align: center; } }
+
+.contact-us-top {
+  margin: 120px 0; }
+
+.contact-top__info-wrapper {
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-around; }
+
+.contact-top__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact-top__info img {
+    width: 90px; }
+  .contact-top__info .contact-top__info-title {
+    font-weight: bold; }
+
+.contact-map__wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.text-primary {
+  color: #F6AA26 !important; }

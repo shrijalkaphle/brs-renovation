@@ -1,0 +1,15 @@
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 22px;
+  color: $primary-gold;
+  border: 1px solid $primary-gold;
+  i {
+    font-size: 24px;
+  }
+}
