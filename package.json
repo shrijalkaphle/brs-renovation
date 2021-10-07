@@ -1,23 +1,18 @@
 {
-  "name": "brs-renovation",
+  "name": "brs-tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build src/tailwind.css -o assets/css/tailwind.css",
     "dev": "node-sass -w scss/style.scss style.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shrijalkaphle/brs-renovation.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shrijalkaphle/brs-renovation/issues"
-  },
-  "homepage": "https://github.com/shrijalkaphle/brs-renovation#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
   }
 }
