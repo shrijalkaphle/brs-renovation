@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/js/jqyery.min.js"></script>
+    <title>BRS Renovation</title>
+    <style>
+        #header {
+            height: 144px;
+            background: #F3F4FA;
+        }
+        #header .container-fluid {
+            padding: 40px 150px 0 150px;
+        }
+        #header .contact i {
+            color: #4A5C7A;
+            font-size: 42px;
+            line-height: 48px;
+        }
+        #header .option {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            display: block;
+        }
+        #header .value {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            display: block;
+            padding-top: 10px;
+        }
+        #navigationToogle {
+            display: none;
+            font-size: 32px;
+            line-height: 100px;
+            font-weight: 300;
+        }
+        .mobilemenu {
+            display: none;
+            background: #FFFFFF;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .mobilemenu .active, .mobilemenu .active .nav-link {
+            color: #F6AA26;
+            border: 0;
+        }
+        .social-circle {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 999px;
+            margin-left: 20px;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+        @media (max-height: 900px) {
+            #header {
+                display:block
+            }
+            #header .container-fluid {
+                padding: 0
+            }
+            #header .map, #header .email {
+                display: none;
+            }
+            #header .social {
+                margin-top: 20px;
+                text-align: center;
+            }
+            #header .phone {
+                margin-top: 20px;
+            }
+            .phone .icon {
+                text-align: right;
+            }
+            #navigationToogle{
+                display: block;
+            }
+            .navmenu {
+                display: none;
+            }
+            .button {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            #services .title {
+                padding: 100px 10px 0 10px !important;
+            }
+            #project .heading {
+                margin: 0;
+            }
+            #project .two-column {
+                margin: 60px 0
+            }
+            #project .three-column {
+                margin: 60px 0
+            }
+            .project-single {
+                margin-bottom: 20px;
+            }
+            .footer-title {
+                padding-top: 30px
+            }
+            #footer .input-field {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 contact map">
+                    <div class="row">
+                        <div class="col-2 icon"><i class="far fa-map-marker-alt"></i></div>
+                        <div class="col">
+                            <span class="option">FIND US</span>
+                            <span class="value">22B, Brooklyin, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 contact phone">
+                    <div class="row">
+                        <div class="col-5 icon"><i class="fas fa-phone"></i></div>
+                        <div class="col-7">
+                            <span class="option">CALL US TODAY</span>
+                            <span class="value">+000-2415-145</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 contact email">
+                    <div class="row">
+                        <div class="col-2 icon"><i class="far fa-envelope"></i></div>
+                        <div class="col">
+                            <span class="option">EMAIL US NOW</span>
+                            <span class="value">brsrennovation@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 social">
+                    <div class="social-circle"><i class="fab fa-facebook"></i></div>
+                    <div class="social-circle"><i class="fab fa-twitter"></i></div>
+                    <div class="social-circle"><i class="fab fa-youtube"></i></div>
+                    <div class="social-circle"><i class="fab fa-linkedin"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="site-logo"> <img src="assets/images/BRS.png" alt=""></div>
+                <div class="site-nav">
+                    <i class="fas fa-bars" id="navigationToogle"></i>
+                    <ul class="navbar navmenu">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="mobilemenu">
+            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="page-content">
+        <!-- Page Header -->
+        <header class="page-header" id="page-header page-header--about">
+            <div class="container">
+                <h1>Contact Us</h1>
+
+            </div>
+        </header>
+
+
+    </div>
+    
+    <footer id="footer">
+        <div id="newsletter">
+            <div class="container shadow">
+                <div class="row">
+                    <div class="col-md-1">
+                        <img src="assets/images/icon-envelope-1 1.png">
+                    </div>
+                    <div class="col-md-8" style="padding-left:35px">
+                        <span class="title">Sign Up For <span class="highlight">FREE</span> Consultation</span>
+                        <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper</span>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="button-primary button">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="footer-title">BSR</p>
+                    <div class="row">
+                        <div class="col-1"><i class="far fa-building"></i></div>
+                        <div class="col"><span class="list-items">Detheme Headquarter</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="fas fa-map-pin"></i></div>
+                        <div class="col"><span class="list-items">1428 Callison Laney Buoy Building 201/VRY Virginia, VA 22902</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="fas fa-phone"></i></div>
+                        <div class="col"><span class="list-items">+62 9282739-44-539</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"><i class="far fa-envelope"></i></div>
+                        <div class="col"><span class="list-items">contact@example.com</span></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Useful Links</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Recent Posts</p>
+                    <ul>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                        <li class="footer-list">
+                            <a href="#">Low water Pressure - What can I do?</a>
+                            <span class="subtitle">12th Jan 2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <p class="footer-title">Newsletter</p>
+                    <p>Subscribe to our newsletter for discounts, specials, and more! We value your privacy.</p>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" class="input-field">
+                    <button class="button button-primary">view more</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">© Copyright  2021. All Right Reserved.</div>
+                <div class="col-md-6 social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+<script>
+    $('#navigationToogle').on('click', () => {
+        $('.mobilemenu').slideToggle()
+    })
+</script>

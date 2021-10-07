@@ -6722,6 +6722,11 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-weight: 400; }
 
+.page-header {
+  height: 98px;
+  background-color: #173459;
+  color: white; }
+
 @font-face {
   font-family: "Barlow Regular";
   font-style: normal;
