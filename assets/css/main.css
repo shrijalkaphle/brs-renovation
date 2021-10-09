@@ -9,6 +9,10 @@
     width: 80%;
     margin: auto;
 }
+.navmenu .nav-item {
+    display:block;
+    float:left;
+}
 body {
     font-family: 'Barlow Regular', sans-serif !important;
 }
@@ -128,9 +132,12 @@ body {
     line-height: 19px;
     color: #424662;
 }
+.highlight {
+    color: #F6AA26;
+}
 .button {
     margin-top: 35px;
-    padding: 15px 25px;
+    padding: 20px 35px;
     border-radius: 999px;
     text-transform: uppercase;
     font-family: 'Barlow Regular', sans-serif;
@@ -225,6 +232,7 @@ li a {
     padding-top: 10px;
 }
 .input-field {
+    margin-top: 20px;
     border-radius: 30px;
     padding: 12px 20px;
     color: #000000;
@@ -242,7 +250,29 @@ li a {
     text-align: right;
     letter-spacing: 15px
 }
-
+#page {
+    height: 50vh;
+    background-image: url('../images/Rectangle\ 35.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(9, 30, 58, 0.7);
+    overflow: hidden;
+}
+.page-text .subtitle,.page-text .heading {
+    color: #FFF;
+}
+.divider {
+    height: 20px;
+    border-bottom: 2px solid #DADBE7;
+}
 @media (max-height: 900px) {
     .heading {
         font-size: 32px !important;
@@ -290,6 +320,7 @@ li a {
         display: none;
     }
     .button {
+        padding: 15px 25px;
         font-size: 12px;
         line-height: 14px;
     }

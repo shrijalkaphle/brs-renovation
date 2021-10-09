@@ -59,9 +59,6 @@
     width: 60%;
     margin: auto;
 }
-.highlight {
-    color: #F6AA26;
-}
 .service-single {
     overflow: hidden;
     position: relative;
@@ -74,7 +71,7 @@
     height: 210px;
     margin: auto;
     top: 245px;
-    left: 25px;
+    left: 35px;
     transition: all .5s ease-in-out;
     transform-origin: left top;
     padding-top: 25px
@@ -131,10 +128,6 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-}
-.divider {
-    height: 20px;
-    border-bottom: 2px solid #DADBE7;
 }
 #chooseus {
     padding: 100px 0;
