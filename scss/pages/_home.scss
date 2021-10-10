@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Barlow Regular"),
-    url("../fonts/Barlow/Barlow-Regular.woff") format("woff");
+    url("../assets/fonts/Barlow/Barlow-Regular.woff") format("woff");
 }
 
 body {
@@ -68,7 +68,7 @@ body {
 #about {
   position: relative;
   height: calc(100vh - 144px - 80px);
-  background-image: url("../images/Rectangle\ 6.png");
+  background-image: url("../assets/images/Rectangle\ 6.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -311,7 +311,7 @@ body {
 }
 #consult {
   position: relative;
-  background-image: url("../images/Rectangle\ 19.png");
+  background-image: url("../assets/images/Rectangle\ 19.png");
   min-height: 70vh;
   background-repeat: no-repeat;
   background-position: center;

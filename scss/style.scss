@@ -1,3 +1,8 @@
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import 'abstracts/variables';
 
 @import 'base/typography';
@@ -21,7 +26,12 @@
 
 @import 'pages/home';
 @import 'pages/contact';
+@import 'pages/services';
 
 .text-primary{
     color: $primary-gold !important;
+}
+
+.font-bold{
+    font-weight: bold !important;
 }
