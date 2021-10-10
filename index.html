@@ -4,125 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="assets/js/jqyery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>BRS Renovation</title>
-    <style>
-        #header {
-            height: 144px;
-            background: #F3F4FA;
-        }
-        #header .container-fluid {
-            padding: 40px 150px 0 150px;
-        }
-        #header .contact i {
-            color: #4A5C7A;
-            font-size: 42px;
-            line-height: 48px;
-        }
-        #header .option {
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            display: block;
-        }
-        #header .value {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 22px;
-            display: block;
-            padding-top: 10px;
-        }
-        #navigationToogle {
-            display: none;
-            font-size: 32px;
-            line-height: 100px;
-            font-weight: 300;
-        }
-        .mobilemenu {
-            display: none;
-            background: #FFFFFF;
-            width: 100%;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
-        .mobilemenu .active, .mobilemenu .active .nav-link {
-            color: #F6AA26;
-            border: 0;
-        }
-        .social-circle {
-            display: inline-block;
-            border: 1px solid black;
-            border-radius: 999px;
-            margin-left: 20px;
-            height: 35px;
-            width: 35px;
-            text-align: center;
-            line-height: 35px;
-        }
-        @media (max-height: 900px) {
-            #header {
-                display:block
-            }
-            #header .container-fluid {
-                padding: 0
-            }
-            #header .map, #header .email {
-                display: none;
-            }
-            #header .social {
-                margin-top: 20px;
-                text-align: center;
-            }
-            #header .phone {
-                margin-top: 20px;
-            }
-            .phone .icon {
-                text-align: right;
-            }
-            #navigationToogle{
-                display: block;
-            }
-            .navmenu {
-                display: none;
-            }
-            .button {
-                font-size: 12px;
-                line-height: 14px;
-            }
-            #services .title {
-                padding: 100px 10px 0 10px !important;
-            }
-            #project .heading {
-                margin: 0;
-            }
-            #project .two-column {
-                margin: 60px 0
-            }
-            #project .three-column {
-                margin: 60px 0
-            }
-            .project-single {
-                margin-bottom: 20px;
-            }
-            .footer-title {
-                padding-top: 30px
-            }
-            #footer .input-field {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
     <div id="header">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 contact map">
-                    <div class="row">
+            <div class="md:flex">
+                <div class="flex-1 contact map">
+                    <div class="flex space-x-2">
                         <div class="col-2 icon"><i class="far fa-map-marker-alt"></i></div>
                         <div class="col">
                             <span class="option">FIND US</span>
@@ -130,8 +22,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 contact phone">
-                    <div class="row">
+                <div class="flex-1 contact phone">
+                    <div class="flex space-x-2">
                         <div class="col-5 icon"><i class="fas fa-phone"></i></div>
                         <div class="col-7">
                             <span class="option">CALL US TODAY</span>
@@ -139,8 +31,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 contact email">
-                    <div class="row">
+                <div class="flex-1 contact email">
+                    <div class="flex space-x-2">
                         <div class="col-2 icon"><i class="far fa-envelope"></i></div>
                         <div class="col">
                             <span class="option">EMAIL US NOW</span>
@@ -148,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 social">
+                <div class="flex-2 social">
                     <div class="social-circle"><i class="fab fa-facebook"></i></div>
                     <div class="social-circle"><i class="fab fa-twitter"></i></div>
                     <div class="social-circle"><i class="fab fa-youtube"></i></div>
@@ -159,13 +51,13 @@
     </div>
     <div id="navbar">
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="site-logo"> <img src="assets/images/BRS.png" alt=""></div>
-                <div class="site-nav">
+            <div class="flex justify-content-between">
+                <div class="site-logo flex-1"> <img src="assets/images/BRS.png" alt=""></div>
+                <div class="site-nav flex-2">
                     <i class="fas fa-bars" id="navigationToogle"></i>
                     <ul class="navbar navmenu">
-                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
@@ -174,8 +66,8 @@
             </div>
         </div>
         <ul class="mobilemenu">
-            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
@@ -184,19 +76,19 @@
     <div id="about">
         <div class="content">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-7">
-                        <p class="subheading">we got it</p>
-                        <p class="heading">Whether It’s Your <span class="highlight">Home or Office</span> That Needs Remodeling</p>
-                        <p class="subtitle">
-                            Morbi tristique senectus et netus et malesuada fames ac. Nunc vel risus commodo viverra. Non pulvinar neque laoreet suspendisse interdum.
-                        </p>
-                        <button class="button button-primary">learn more</button>
-                        <button class="button button-secondary" style="margin-left: 20px;">view project</button>
-                    </div>
-                    <div class="col-sm-5">
-                        <img src="assets/images/tinyjpg-handsome-happy-workman-holding-level-tool-and-hamm-979P7L2 1.png" style="height:100%;object-fit: cover;">
-                    </div>
+                <div class="md:grid grid-rows-1 grid-flow-col gap-2">
+                <div class="row-span-2 col-span-1">
+                    <p class="subheading">we got it</p>
+                    <p class="heading">Whether It’s Your <span class="highlight">Home or Office</span> That Needs Remodeling</p>
+                    <p class="subtitle">
+                        Morbi tristique senectus et netus et malesuada fames ac. Nunc vel risus commodo viverra. Non pulvinar neque laoreet suspendisse interdum.
+                    </p>
+                    <button class="button button-primary">learn more</button>
+                    <button class="button button-secondary">view project</button>
+                </div>
+                <div class="row-span-3">
+                    <img src="assets/images/tinyjpg-handsome-happy-workman-holding-level-tool-and-hamm-979P7L2 1.png" style="height:100%;object-fit: cover;">
+                </div>
                 </div>
             </div>
         </div>
@@ -210,10 +102,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
             </div>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="md:grid grid-rows-1 grid-flow-col gap-2">
+                <div class="row-span-2 col-span-1">
                     <div class="service-single">
-                        <img src="assets/images/Rectangle 32.png" style="height:100%;object-fit: cover;">
+                        <img src="assets/images/Rectangle 32.png" class="object-cover">
                         <div class="description">
                             <p class="subheading">REMODELING</p>
                             <p class="heading">Home / Office Remodelling</p>
@@ -223,9 +115,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="row-span-2 col-span-1">
                     <div class="service-single">
-                        <img src="assets/images/Rectangle 32-2.png" style="object-fit: cover;">
+                        <img src="assets/images/Rectangle 32-2.png" class="object-cover">
                         <div class="description">
                             <p class="subheading">REMODELING</p>
                             <p class="heading">Home / Office Remodelling</p>
@@ -235,9 +127,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="row-span-2 col-span-1">
                     <div class="service-single">
-                        <img src="assets/images/Rectangle 32-1.png" style="object-fit: cover;">
+                        <img src="assets/images/Rectangle 32-1.png" class="object-cover">
                         <div class="description">
                             <p class="subheading">REMODELING</p>
                             <p class="heading">Home / Office Remodelling</p>
@@ -248,147 +140,129 @@
                     </div>
                 </div>
             </div>
-            <center>
+            <div class="text-center">
                 <button class="button button-primary">contact us</button>
-                <button class="button button-secondary" style="margin-left: 20px;">view project</button>
-            </center>
+                <button class="button button-secondary">view project</button>
+            </div>
         </div>
     </div>
     <div id="whatwedo">
-        <img src="assets/images/Rectangle 13.png" class="placeholder-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
+        <div class="md:grid grid-rows-1 grid-flow-col gap-2">
+            <div class="row-span-2 col-span-1">
+                <div class="py-24 md:px-40">
                     <p class="subheading">WE DO IT ALL</p>
                     <p class="heading">Bathrooms, Kitchens, <br> <span class="highlight">Home Renovation</span> - Just Say It!</p>
                     <p class="subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
                     </p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="facts">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <img src="assets/images/icon-buildings 1.png" alt="">
-                                    <div class="p-2">
-                                        <span class="values"><span class="counter" data-target="216">0</span></span>
-                                    </div>
+                    <div class="md:grid grid-cols-2 gap-4">
+                        <div class="facts">
+                            <div class="grid grid-cols-2 place-content-center">
+                                <img src="assets/images/icon-buildings 1.png" alt="">
+                                <div class="p-2">
+                                    <span class="values"><span class="counter" data-target="216">0</span></span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="title">Rennovation Yearly</div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="title">Rennovation Yearly</div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="facts">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <img src="assets/images/icon-paper-stamp 1.png" alt="">
-                                    <div class="p-2">
-                                        <span class="values"><span class="counter" data-target="123">0</span></span>
-                                    </div>
+                        <div class="facts">
+                            <div class="grid grid-cols-2 place-content-center">
+                                <img src="assets/images/icon-plus-arrow 1.png" alt="">
+                                <div class="p-2">
+                                    <span class="values"><span class="counter" data-target="24">0</span>+</span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="title">Projects Completed</div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="title">Returning Clients</div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="facts">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <img src="assets/images/icon-plus-arrow 1.png" alt="">
-                                    <div class="p-2">
-                                        <span class="values"><span class="counter" data-target="24">0</span>+</span>
-                                    </div>
+                        <div class="facts">
+                            <div class="grid grid-cols-2 place-content-center">
+                                <img src="assets/images/icon-paper-stamp 1.png" alt="">
+                                <div class="p-2">
+                                    <span class="values"><span class="counter" data-target="123">0</span></span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="title">Returning Clients</div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="title">Projects Completed</div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="facts">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <img src="assets/images/icon-buildings 2.png" alt="">
-                                    <div class="p-2">
-                                        <span class="values"><span class="counter" data-target="87">0</span>%</span>
-                                    </div>
+                        <div class="facts">
+                            <div class="grid grid-cols-2 place-content-center">
+                                <img src="assets/images/icon-buildings 2.png" alt="">
+                                <div class="p-2">
+                                    <span class="values"><span class="counter" data-target="87">0</span>%</span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="title">Lower Price</div>
                             </div>
+                            <div class="divider"></div>
+                            <div class="title">Lower Price</div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row-span-2 col-span-1 col-end-7 text-right">
+                <img src="assets/images/Rectangle 13.png" class="placeholder-image">
             </div>
         </div>
     </div>
     <div id="chooseus">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="md:grid grid-cols-2 gap-4">
+                <div class="image">
                     <img src="assets/images/pexels-binyamin-mellish-106399 1.png" style="width: 100%">
                 </div>
-                <div class="col-md-6">
+                <div class="md:pl-32">
                     <p class="subheading">WHY CHOOSE US</p>
                     <p class="heading">Interior Or Exterior, We’ll <span class="highlight">Remodel</span> it!</p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p class="subtitle">
-                                Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="subtitle">
-                                Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <p class="subtitle">
-                                Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
-                            </p>
-                        </div>
+                    <div class="md:grid grid-cols-3 gap-4 pt-16">
+                        <p class="subtitle">
+                            Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
+                        </p>
+                        <p class="subtitle">
+                            Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
+                        </p>
+                        <p class="subtitle">
+                            Vitae tempus quam pellentesque nec nam. Vestibulum rhoncus est pellentesque elit ullamcorper 
+                        </p>
                     </div>
                     <button class="button button-primary">learn more</button>
                     <div class="divider"></div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="icon-circle">
-                                        <i class="far fa-phone"></i>
-                                    </div>
-                                    <div class="pl-3">
-                                        <span class="option">Hotline</span> <br>
-                                        <span class="content">+62.8121.77777</span>
-                                    </div>
+                    <div class="md:grid grid-cols-3 gap-4 pt-4">
+                        <div class="contact-info">
+                            <div class="grid grid-rows-1 grid-flow-col place-content-center">
+                                <div class="icon-circle">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="pl-3">
+                                    <span class="option">Hotline</span> <br>
+                                    <span class="content">+62.8121.77777</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="icon-circle">
-                                        <i class="far fa-envelope"></i>
-                                    </div>
-                                    <div class="pl-3">
-                                        <span class="option">Email</span> <br>
-                                        <span class="content">asdf@gmail.com</span>
-                                    </div>
+                        <div class="contact-info">
+                            <div class="grid grid-rows-1 grid-flow-col place-content-center">
+                                <div class="icon-circle">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+                                <div class="pl-3">
+                                    <span class="option">Email</span> <br>
+                                    <span class="content">asdf@gmail.com</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="contact-info">
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="icon-circle">
-                                        <i class="far fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="pl-3">
-                                        <span class="option">Visit Us</span> <br>
-                                        <span class="content">NYC, USA</span>
-                                    </div>
+                        <div class="contact-info">
+                            <div class="grid grid-rows-1 grid-flow-col place-content-center">
+                                <div class="icon-circle">
+                                    <i class="far fa-map-marker-alt"></i>
+                                </div>
+                                <div class="pl-3">
+                                    <span class="option">Visit Us</span> <br>
+                                    <span class="content">NYC, USA</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <img src="assets/images/image 2.png" width="100%" style="padding-top: 20px;">
+                    <img src="assets/images/image 2.png" width="100%" class="pt-4">
                 </div>
             </div>
         </div>
@@ -397,58 +271,47 @@
         <div class="container">
             <p class="subheading">FEATURED PROJECT SHOWCASE</p>
             <p class="heading">With Years Of Experience, We're Confident <span class="highlight">To Do A Great</span> Job For You!</p>
-            <div class="row two-column">
-                <div class="col-md-6">
-                    <div class="project-single">
-                        <img src="assets/images/wall-painting.png">
-                        <div class="project-info">
-                            <span class="title">Wall Painting</span>
-                            <span class="comment">RENOVATION</span>
-                        </div>
+            <div class="md:grid grid-cols-2 gap-4 pt-16 md:px-48">
+                <div class="project-single">
+                    <img src="assets/images/wall-painting.png">
+                    <div class="project-info">
+                        <span class="title">Wall Painting</span>
+                        <span class="comment">RENOVATION</span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="project-single">
-                        <img src="assets/images/modern-studio.png">
-                        <div class="project-info">
-                            <span class="title">Modern Studio</span>
-                            <span class="comment">OFFICE RENOVATION</span>
-                        </div>
+                <div class="project-single">
+                    <img src="assets/images/modern-studio.png">
+                    <div class="project-info">
+                        <span class="title">Modern Studio</span>
+                        <span class="comment">OFFICE RENOVATION</span>
                     </div>
                 </div>
             </div>
-            <div class="row three-column">
-                <div class="col-md-4">
-                    <div class="project-single">
-                        <img src="assets/images/apartment.png">
-                        <div class="project-info">
-                            <span class="title">San Diego Apartment</span>
-                            <span class="comment">home RENOVATION</span>
-                        </div>
+            <div class="md:grid grid-cols-3 gap-4 pt-16">
+                <div class="project-single">
+                    <img src="assets/images/apartment.png">
+                    <div class="project-info">
+                        <span class="title">San Diego Apartment</span>
+                        <span class="comment">home RENOVATION</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-single">
-                        <img src="assets/images/wall-painting-2.png">
-                        <div class="project-info">
-                            <span class="title">Wall Painting</span>
-                            <span class="comment">RENOVATION</span>
-                        </div>
+                <div class="project-single">
+                    <img src="assets/images/wall-painting-2.png">
+                    <div class="project-info">
+                        <span class="title">Wall Painting</span>
+                        <span class="comment">RENOVATION</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="project-single">
-                        <img src="assets/images/remodeling.png">
-                        <div class="project-info">
-                            <span class="title">St. Joseph Home</span>
-                            <span class="comment">home REMODELING</span>
-                        </div>
+                <div class="project-single">
+                    <img src="assets/images/remodeling.png">
+                    <div class="project-info">
+                        <span class="title">St. Joseph Home</span>
+                        <span class="comment">home REMODELING</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="consult">
         <div class="container-fluid">
             <div class="content">
@@ -462,13 +325,13 @@
         </div>
         <div id="testimonial">
             <div class="container shadow">
-                <div class="row">
-                    <div class="col-md-3 user-info">
-                        <img src="assets/images/Ellipse 2.png" alt="">
+                <div class="md:grid grid-rows-1 grid-flow-col">
+                    <div class="user-info">
+                        <img src="assets/images/Ellipse 2.png" class="mx-auto">
                         <span class="name">Beth Havelear</span>
                         <span class="comment">NEVADA</span>
                     </div>
-                    <div class="col-md-1 quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="quote px-24"><i class="fas fa-quote-right"></i></div>
                     <div class="col-md-8 content">
                         Proin libero nunc consequat interdum varius. Dolor sit amet consectetur adipiscing elit ut. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Vulputate enim nulla aliquet porttitor
                     </div>
@@ -480,41 +343,37 @@
         <div class="container">
             <p class="subheading">FEATURED ARTICLES</p>
             <p class="heading">Read Pro <span class="highlight">Tips & Tricks</span> In Our Blog</p>
-            <div class="row blog-row">
-                <div class="col-md-4">
-                    <div class="blog-single">
-                        <img src="assets/images/Rectangle 24.png">
-                        <p class="date">12th Jan 2021</p>
-                        <p class="title">How VOC Affects Your Indoor Air Quality</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                        <button class="button-secondary button">READ MORE</button>
-                    </div>
+            <div class="md:grid grid-cols-3 gap-4 pt-32">
+                <div class="blog-single mb-16">
+                    <img src="assets/images/Rectangle 24.png">
+                    <p class="date">12th Jan 2021</p>
+                    <p class="title">How VOC Affects Your Indoor Air Quality</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <button class="button-secondary button">READ MORE</button>
                 </div>
-                <div class="col-md-4">
-                    <div class="blog-single">
-                        <img src="assets/images/Rectangle 22.png">
-                        <p class="date">12th Jan 2021</p>
-                        <p class="title">Time to Get Your House Clean and in Order</p>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <div class="blog-single pb-16">
+                    <img src="assets/images/Rectangle 22.png">
+                    <p class="date">12th Jan 2021</p>
+                    <p class="title">Time to Get Your House Clean and in Order</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
-                        <button class="button-secondary button">READ MORE</button>
-                    </div>
+                    <button class="button-secondary button">READ MORE</button>
                 </div>
-                <div class="col-md-4">
-                    <div class="blog-single blog-imageless">
-                        <p class="title">Time to Get Your House Clean and in Order</p>
+                <div id="no-img pt-16">
+                    <div class="blog-single blog-imageless pb-16">
+                        <p class="title">The Benefits of Using UV=C Light in Hospitality Industry</p>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                         <p class="date"><u>Read in 3 minutes</u></p>
                     </div>
-                    <div class="blog-single blog-imageless">
-                        <p class="title">Time to Get Your House Clean and in Order</p>
+                    <div class="blog-single blog-imageless pb-16">
+                        <p class="title">What is UV-C Light</p>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                         <p class="date"><u>Read in 3 minutes</u></p>
                     </div>
-                    <div class="blog-single blog-imageless">
-                        <p class="title">Time to Get Your House Clean and in Order</p>
+                    <div class="blog-single blog-imageless pb-16">
+                        <p class="title">UV Light at Home</p>
                         <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
                         <p class="date"><u>Read in 3 minutes</u></p>
@@ -525,54 +384,54 @@
         </div>
     </div>
     <div id="footer">
-        <div id="newsletter">
-            <div class="container shadow">
-                <div class="row">
-                    <div class="col-md-1">
+        <div id="newsletter"class="px-16">
+            <div class="container shadow ">
+                <div class="md:grid grid-flow-col gap-2">
+                    <div class="image">
                         <img src="assets/images/icon-envelope-1 1.png">
                     </div>
-                    <div class="col-md-8" style="padding-left:35px">
+                    <div class="">
                         <span class="title">Sign Up For <span class="highlight">FREE</span> Consultation</span>
                         <span class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper</span>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-end-7">
                         <button class="button-primary button">contact us</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container footer-container">
-            <div class="row">
-                <div class="col-md-3">
+        <div class="container footer-container pt-28">
+            <div class="md:grid grid-cols-4 gap-2">
+                <div class="column1">
                     <p class="footer-title">BSR</p>
-                    <div class="row">
-                        <div class="col-1"><i class="far fa-building"></i></div>
-                        <div class="col"><span class="list-items">Detheme Headquarter</span></div>
+                    <div class="flex space-x-2 pt-6">
+                        <i class="far fa-building"></i>
+                        <span class="list-items">Detheme Headquarter</span>
                     </div>
-                    <div class="row">
-                        <div class="col-1"><i class="fas fa-map-pin"></i></div>
-                        <div class="col"><span class="list-items">1428 Callison Laney Buoy Building 201/VRY Virginia, VA 22902</span></div>
+                    <div class="flex space-x-2 pt-4">
+                        <i class="fas fa-map-pin"></i>
+                        <span class="list-items">1428 Callison Laney Buoy Building 201/VRY Virginia, VA 22902</span>
                     </div>
-                    <div class="row">
-                        <div class="col-1"><i class="fas fa-phone"></i></div>
-                        <div class="col"><span class="list-items">+62 9282739-44-539</span></div>
+                    <div class="flex space-x-2 pt-4">
+                        <i class="fas fa-phone"></i>
+                        <span class="list-items">+62 9282739-44-539</span>
                     </div>
-                    <div class="row">
+                    <div class="flex space-x-2 pt-4">
                         <div class="col-1"><i class="far fa-envelope"></i></div>
                         <div class="col"><span class="list-items">contact@example.com</span></div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="column2">
                     <p class="footer-title">Useful Links</p>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Our Team</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Our Process</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="column-3">
                     <p class="footer-title">Recent Posts</p>
                     <ul>
                         <li class="footer-list">
@@ -589,7 +448,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="column-4">
                     <p class="footer-title">Newsletter</p>
                     <p>Subscribe to our newsletter for discounts, specials, and more! We value your privacy.</p>
                     <input type="email" name="email" id="email" placeholder="Enter your Email" class="input-field">
@@ -600,9 +459,9 @@
     </div>
     <div id="copyright">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">© Copyright  2021. All Right Reserved.</div>
-                <div class="col-md-6 social">
+            <div class="md:grid grid-cols-2 gap-4">
+                <div>© Copyright  2021. All Right Reserved.</div>
+                <div class="col-end-7 social">
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-youtube"></i>
@@ -611,11 +470,7 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/jqyery.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-<script>
-    $('#navigationToogle').on('click', () => {
-        $('.mobilemenu').slideToggle()
-    })
-</script>

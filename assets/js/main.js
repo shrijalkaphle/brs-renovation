@@ -1,5 +1,6 @@
 const counters = document.querySelectorAll('.counter');
-const speed = 100
+const speed = 200
+const animateDiv = document.getElementById('whatwedo')
 
 counters.forEach(counter => {
     const updateCount = () => {
@@ -9,11 +10,21 @@ counters.forEach(counter => {
         
         if(count < target) {
             counter.innerText = Math.ceil(count + inc)
-            setTimeout(updateCount, 1);
+            setTimeout(updateCount, 10);
         } else {
             count.innerText = target
         }
     }
+    document.addEventListener('scroll', () => {
+        const clientHeight = document.documentElement.clientHeight
+        const divTop = animateDiv.getBoundingClientRect().y
+        const divHeight = animateDiv.getBoundingClientRect().height
+        if(clientHeight > divTop + divHeight * 2/3) {
+            updateCount()
+        }
+    })
+})
 
-    updateCount()
+$('#navigationToogle').on('click', () => {
+    $('.mobilemenu').slideToggle()
 })
