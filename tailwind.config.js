@@ -40,6 +40,9 @@ module.exports = {
         other1: "#4A5C7A",
         other2: "#424662",
       },
+      gray: {
+        light: '#F4F5FB'
+      }
     },
     spacing: {
       px: "1px",
