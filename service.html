@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/dist/style.css" />
     <script src="assets/js/jqyery.min.js"></script>
     <title>Services</title>
     <style>
@@ -122,9 +121,9 @@
   <body>
     <div id="header">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2 contact map">
-            <div class="row">
+        <div class="md:flex">
+          <div class="flex-1 contact map">
+            <div class="flex space-x-2">
               <div class="col-2 icon">
                 <i class="far fa-map-marker-alt"></i>
               </div>
@@ -134,8 +133,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 contact phone">
-            <div class="row">
+          <div class="flex-1 contact phone">
+            <div class="flex space-x-2">
               <div class="col-5 icon"><i class="fas fa-phone"></i></div>
               <div class="col-7">
                 <span class="option">CALL US TODAY</span>
@@ -143,8 +142,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 contact email">
-            <div class="row">
+          <div class="flex-1 contact email">
+            <div class="flex space-x-2">
               <div class="col-2 icon"><i class="far fa-envelope"></i></div>
               <div class="col">
                 <span class="option">EMAIL US NOW</span>
@@ -152,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 social">
+          <div class="flex-2 social">
             <div class="social-circle"><i class="fab fa-facebook"></i></div>
             <div class="social-circle"><i class="fab fa-twitter"></i></div>
             <div class="social-circle"><i class="fab fa-youtube"></i></div>
@@ -162,18 +161,20 @@
       </div>
     </div>
     <div id="navbar">
-      <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="site-logo">
+      <div class="container mx-auto">
+        <div class="flex justify-content-between">
+          <div class="site-logo flex-1">
             <img src="assets/images/BRS.png" alt="" />
           </div>
           <div class="site-nav">
             <i class="fas fa-bars" id="navigationToogle"></i>
-            <ul class="navbar navmenu">
-              <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
+            <ul class="navbar navmenu flex flex-2">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item active">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Services</a>
               </li>
@@ -186,8 +187,10 @@
         </div>
       </div>
       <ul class="mobilemenu">
-        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item active">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
@@ -203,47 +206,73 @@
           background-image: url('https://kit.detheme.com/oakwood/wp-content/uploads/sites/67/2021/01/couple-with-blue-color-palette-thinking-about-reno-79VADK6.jpg');
         "
       >
-        <div class="container">
+        <div class="container mx-auto">
           <div class="breadcrumbs">
             <ul>
               <li>Home</li>
               <li>Service</li>
             </ul>
           </div>
-          <h1 class="text-bold">Services</h1>
+          <h1 class="mt-3 text-4xl font-bold">Services</h1>
         </div>
       </header>
 
       <section class="services-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
+        <div class="container mx-auto">
+          <div class="flex items-center space-x-8">
+            <div class="w-1/2">
+              <img
+                class="block mx-auto"
+                src="./assets/images/services.png"
+                alt=""
+              />
+            </div>
+            <div class="w-1/2">
               <div>
                 <span class="primary-subtitle">WE’RE EXPERT IN RENOVATION</span>
-                <h1 class="font-bold">
-                  We've Made Progress
+                <h1 class="text-5xl font-bold">
+                  We've Made Progress<br />
                   <span class="text-primary">Everywhere</span>
                 </h1>
-                <p>
+                <p class="mt-6">
                   Purus sit amet fermentum cras mattis consectetur let. Urna
                   mollis ornare vel eu leo Aenean lacinia bibendum nulla
                 </p>
               </div>
 
-              <div class="services-top-info">
+              <div class="services-top-info mt-8">
                 <div class="services-top-info__item">
-                  <div class="row">
-                    <div class="col-2">
+                  <div class="flex space-x-6 items-center">
+                    <div>
                       <div class="circle-icon circle-icon--full">
                         <i class="fal fa-user-hard-hat"></i>
                       </div>
                     </div>
-                    <div class="col-2">
+                    <div>
                       <span class="services-top-info__number"> 22+ </span>
                     </div>
-                    <div class="col">
-                      <h4>Years of Experience</h4>
+                    <div>
+                      <h4 class="font-bold mb-2">Years of Experience</h4>
+                      <p>
+                        Purus sit amet fermentum cras mattis consectetur let.
+                        Urna mollis ornare vel eu leo Aenean lacinia bibendum
+                        nulla
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="services-top-info__item mt-8">
+                  <div class="flex space-x-6 items-center">
+                    <div>
+                      <div class="circle-icon circle-icon--full">
+                        <i class="fal fa-user-hard-hat"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <span class="services-top-info__number"> 22+ </span>
+                    </div>
+                    <div>
+                      <h4 class="font-bold mb-2">Projects Done</h4>
                       <p>
                         Purus sit amet fermentum cras mattis consectetur let.
                         Urna mollis ornare vel eu leo Aenean lacinia bibendum
@@ -258,127 +287,93 @@
         </div>
       </section>
 
-      <section class="company-summary-section">
-        <div class="container company-summary-section__inner">
-          <div class="row">
-            <div class="company-summary-section__item col">
-              <div class="circle-icon">
-                <i class="fal fa-user-hard-hat"></i>
-              </div>
-              <div>
-                <div class="company-summary-section__heading">
-                  <h4>Professional Team</h4>
-                </div>
-                <p>Nullam id dolor id nibh ultricies vehicula ut id.</p>
-              </div>
-            </div>
-            <div class="company-summary-section__item col">
-              <div class="circle-icon">
-                <i class="fal fa-user-hard-hat"></i>
-              </div>
-              <div>
-                <div class="company-summary-section__heading">
-                  <h4>24/7 Customer Services</h4>
-                </div>
-                <p>Nullam id dolor id nibh ultricies vehicula ut id.</p>
-              </div>
-            </div>
-            <div class="company-summary-section__item col">
-              <div class="circle-icon">
-                <i class="fal fa-user-hard-hat"></i>
-              </div>
-              <div>
-                <div class="company-summary-section__heading">
-                  <h4>High-End Quality Tools</h4>
-                </div>
-                <p>Nullam id dolor id nibh ultricies vehicula ut id.</p>
-              </div>
-            </div>
-            <div class="company-summary-section__item col">
-              <div class="circle-icon">
-                <i class="fal fa-user-hard-hat"></i>
-              </div>
-              <div>
-                <div class="company-summary-section__heading">
-                  <h4>Best Affordable Price</h4>
-                </div>
-                <p>Nullam id dolor id nibh ultricies vehicula ut id.</p>
-              </div>
-            </div>
-          </div>
+      <section class="my-16">
+        <div class="container mx-auto">
+          <img class="mx-auto" src="./assets/images/companies.png" alt="" />
         </div>
       </section>
 
-      <section class="contact-form__wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="offset-md-2 col-md-8 contact-form__inner">
-              <span class="primary-subtitle">Free Consultation</span>
-              <h1>
-                Need a <span class="text-primary">free quote</span> or just
-                wanna talk?
+      <section class="mb-24">
+        <div id="services">
+          <div class="container">
+            <div class="title">
+              <p class="subheading">OUR FEATURED SERVICES</p>
+              <h1 class="heading">
+                Entrust Us With <span class="highlight">Your Project</span><br> And
+                You Will Not Be Disappointed!
               </h1>
-
-              <form class="contact-form" action="">
-                <div class="contact-form-row row">
-                  <div class="col">
-                    <div>
-                      <label for="">What is your full name?</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div>
-                      <label for="">What is your full name?</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="contact-form-row row">
-                  <div class="col">
-                    <div>
-                      <label for="">What service are you intereseted in?</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div>
-                      <label for=""
-                        >Where are you looking to get this service?</label
-                      >
-                      <input type="text" class="form-control" />
-                    </div>
+              <p class="mt-8 mb-24">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="md:grid grid-rows-1 grid-flow-col gap-2">
+              <div class="row-span-2 col-span-1">
+                <div class="service-single">
+                  <img
+                    src="assets/images/Rectangle 32.png"
+                    class="object-cover"
+                  />
+                  <div class="description">
+                    <p class="subheading">REMODELING</p>
+                    <p class="heading">Home / Office Remodelling</p>
+                    <p class="subtitle">
+                      Vel fringilla est ullamcorper eget nulla facilisi. Tempus
+                      urna et pharetra pharetra massa massa ultricies
+                    </p>
                   </div>
                 </div>
-
-                <div class="contact-form-row row">
-                  <div class="col-12">
-                    <label for="">Message</label>
-                    <textarea type="text" class="form-control"></textarea>
+              </div>
+              <div class="row-span-2 col-span-1">
+                <div class="service-single">
+                  <img
+                    src="assets/images/Rectangle 32-2.png"
+                    class="object-cover"
+                  />
+                  <div class="description">
+                    <p class="subheading">REMODELING</p>
+                    <p class="heading">Home / Office Remodelling</p>
+                    <p class="subtitle">
+                      Vel fringilla est ullamcorper eget nulla facilisi. Tempus
+                      urna et pharetra pharetra massa massa ultricies
+                    </p>
                   </div>
                 </div>
-
-                <div class="contact-form-row">
-                  <button class="button-primary button">
-                    SEND YOUR MESSAGE
-                  </button>
+              </div>
+              <div class="row-span-2 col-span-1">
+                <div class="service-single">
+                  <img
+                    src="assets/images/Rectangle 32-1.png"
+                    class="object-cover"
+                  />
+                  <div class="description">
+                    <p class="subheading">REMODELING</p>
+                    <p class="heading">Home / Office Remodelling</p>
+                    <p class="subtitle">
+                      Vel fringilla est ullamcorper eget nulla facilisi. Tempus
+                      urna et pharetra pharetra massa massa ultricies
+                    </p>
+                  </div>
                 </div>
-              </form>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="button button-primary">contact us</button>
+              <button class="button button-secondary">view project</button>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <footer id="footer">
+    <div id="footer" class="mt-32">
       <div id="newsletter">
-        <div class="container shadow">
-          <div class="row">
-            <div class="col-md-1">
+        <div class="container w-2/3 shadow">
+          <div class="md:grid grid-flow-col gap-2">
+            <div class="image">
               <img src="assets/images/icon-envelope-1 1.png" />
             </div>
-            <div class="col-md-8" style="padding-left: 35px">
+            <div class="">
               <span class="title"
                 >Sign Up For
                 <span class="highlight">FREE</span> Consultation</span
@@ -388,55 +383,49 @@
                 elit tellus, luctus nec ullamcorper</span
               >
             </div>
-            <div class="col-md-3">
+            <div class="col-end-7">
               <button class="button-primary button">contact us</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container footer-container">
-        <div class="row">
-          <div class="col-md-3">
+      <div class="container footer-container pt-28">
+        <div class="md:grid grid-cols-4 gap-2">
+          <div class="column1">
             <p class="footer-title">BSR</p>
-            <div class="row">
-              <div class="col-1"><i class="far fa-building"></i></div>
-              <div class="col">
-                <span class="list-items">Detheme Headquarter</span>
-              </div>
+            <div class="flex space-x-2 pt-6">
+              <i class="far fa-building"></i>
+              <span class="list-items">Detheme Headquarter</span>
             </div>
-            <div class="row">
-              <div class="col-1"><i class="fas fa-map-pin"></i></div>
-              <div class="col">
-                <span class="list-items"
-                  >1428 Callison Laney Buoy Building 201/VRY Virginia, VA
-                  22902</span
-                >
-              </div>
+            <div class="flex space-x-2 pt-4">
+              <i class="fas fa-map-pin"></i>
+              <span class="list-items"
+                >1428 Callison Laney Buoy Building 201/VRY Virginia, VA
+                22902</span
+              >
             </div>
-            <div class="row">
-              <div class="col-1"><i class="fas fa-phone"></i></div>
-              <div class="col">
-                <span class="list-items">+62 9282739-44-539</span>
-              </div>
+            <div class="flex space-x-2 pt-4">
+              <i class="fas fa-phone"></i>
+              <span class="list-items">+62 9282739-44-539</span>
             </div>
-            <div class="row">
+            <div class="flex space-x-2 pt-4">
               <div class="col-1"><i class="far fa-envelope"></i></div>
               <div class="col">
                 <span class="list-items">contact@example.com</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="column2">
             <p class="footer-title">Useful Links</p>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Our Process</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="column-3">
             <p class="footer-title">Recent Posts</p>
             <ul>
               <li class="footer-list">
@@ -453,7 +442,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="column-4">
             <p class="footer-title">Newsletter</p>
             <p>
               Subscribe to our newsletter for discounts, specials, and more! We
@@ -470,12 +459,12 @@
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     <div id="copyright">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">© Copyright 2021. All Right Reserved.</div>
-          <div class="col-md-6 social">
+        <div class="md:grid grid-cols-2 gap-4">
+          <div>© Copyright 2021. All Right Reserved.</div>
+          <div class="col-end-7 social">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-youtube"></i>
