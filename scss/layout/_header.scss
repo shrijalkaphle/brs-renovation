@@ -1,23 +1,9 @@
-@import 'tailwind.css';
-@font-face {
-    font-family: 'Barlow Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Barlow Regular'), url('../fonts/Barlow/Barlow-Regular.woff') format('woff');
-    }
-.container {
-    width: 80%;
-    margin: auto;
-}
 .navmenu .nav-item {
     display:block;
     float:left;
 }
-body {
-    font-family: 'Barlow Regular', sans-serif !important;
-}
+
 #header {
-    height: 144px;
     background: #F3F4FA;
 }
 #header .container-fluid {
@@ -110,6 +96,8 @@ body {
     line-height: 22px;
     font-weight: 300;
 }
+
+
 .subheading {
     text-transform: uppercase;
     font-weight: 600;
@@ -135,124 +123,10 @@ body {
 .highlight {
     color: #F6AA26;
 }
-.button {
-    margin-top: 35px;
-    padding: 20px 35px;
-    border-radius: 999px;
-    text-transform: uppercase;
-    font-family: 'Barlow Regular', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: white;
-    letter-spacing: 0.13em;
-}
-.button-primary {
-    background-color: #F6AA26;
-    border: 0;
-}
-.button-primary:hover {
-    background-color: #C78513;
-}
-.button-secondary {
-    margin-left: 10px;
-    background-color: transparent;
-    border: 1px solid #C78513;
-    color: #C78513
-}
-.button-secondary:hover {
-    background-color: #C78513;
-    color: white;
-}
-#footer {
-    position: relative;
-    background: #171732;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    color: #FFFFFF;
-}
-#footer #newsletter {
-    position: absolute;
-    width: 100%;
-    top:-83px;
-    z-index: 99;
-}
-#newsletter .button {
-    margin-top: 0;
-}
-#newsletter .container {
-    background: white;
-    height: 100%;
-    color: #000000;
-    padding: 35px;
-}
-#newsletter img {
-    margin-left:30px
-}
-#newsletter .title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #171732;
-}
-#newsletter .subtitle {
-    color: #424662;
-    font-size: 16px;
-    line-height: 19px;
-    padding-top: 0
-}
-#footer .footer-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-}
-#footer .row {
-    padding-top: 15px
-}
-.list-items {
-    font-size: 14px;
-    line-height: 17px;
-}
-#footer ul {
-    padding:0;
-    margin: 0;
-    list-style-type: none;
-}
-ul li {
-    padding-top: 15px
-}
-li a {
-    color: #FFFFFF;
-    font-size: 14px;
-    line-height: 17px;
-}
-#footer .subtitle {
-    display: block;
-    padding-top: 10px;
-}
-.input-field {
-    margin-top: 20px;
-    border-radius: 30px;
-    padding: 12px 20px;
-    color: #000000;
-    border: 0;
-    outline: none;
-}
-#copyright {
-    background: #060618;
-    color: white;
-}
-#copyright .container {
-    padding: 35px 0;
-}
-#copyright .social {
-    text-align: right;
-    letter-spacing: 15px
-}
+
 #page {
     height: 50vh;
-    background-image: url('../images/Rectangle\ 35.png');
+    background-image: url('../assets/images/Rectangle\ 35.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -1,0 +1,11 @@
+.single-review{
+    height: 390px;
+    @apply py-4;
+    @apply px-6;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: overlay;
+}
+

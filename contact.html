@@ -4,127 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/dist/style.css" />
     <script src="assets/js/jqyery.min.js"></script>
     <title>BRS Renovation</title>
-    <style>
-      #header {
-        height: 144px;
-        background: #f3f4fa;
-      }
-      #header .container-fluid {
-        padding: 40px 150px 0 150px;
-      }
-      #header .contact i {
-        color: #4a5c7a;
-        font-size: 42px;
-        line-height: 48px;
-      }
-      #header .option {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        display: block;
-      }
-      #header .value {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 22px;
-        display: block;
-        padding-top: 10px;
-      }
-      #navigationToogle {
-        display: none;
-        font-size: 32px;
-        line-height: 100px;
-        font-weight: 300;
-      }
-      .mobilemenu {
-        display: none;
-        background: #ffffff;
-        width: 100%;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-      }
-      .mobilemenu .active,
-      .mobilemenu .active .nav-link {
-        color: #f6aa26;
-        border: 0;
-      }
-      .social-circle {
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 999px;
-        margin-left: 20px;
-        height: 35px;
-        width: 35px;
-        text-align: center;
-        line-height: 35px;
-      }
-      @media (max-height: 900px) {
-        #header {
-          display: block;
-        }
-        #header .container-fluid {
-          padding: 0;
-        }
-        #header .map,
-        #header .email {
-          display: none;
-        }
-        #header .social {
-          margin-top: 20px;
-          text-align: center;
-        }
-        #header .phone {
-          margin-top: 20px;
-        }
-        .phone .icon {
-          text-align: right;
-        }
-        #navigationToogle {
-          display: block;
-        }
-        .navmenu {
-          display: none;
-        }
-        .button {
-          font-size: 12px;
-          line-height: 14px;
-        }
-        #services .title {
-          padding: 100px 10px 0 10px !important;
-        }
-        #project .heading {
-          margin: 0;
-        }
-        #project .two-column {
-          margin: 60px 0;
-        }
-        #project .three-column {
-          margin: 60px 0;
-        }
-        .project-single {
-          margin-bottom: 20px;
-        }
-        .footer-title {
-          padding-top: 30px;
-        }
-        #footer .input-field {
-          width: 100%;
-        }
-      }
-    </style>
   </head>
   <body>
-    <div id="header">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2 contact map">
-            <div class="row">
+    <div id="header" class="py-8">
+      <div class="container">
+        <div class="md:flex items-center">
+          <div class="flex-1 contact map">
+            <div class="flex space-x-2">
               <div class="col-2 icon">
                 <i class="far fa-map-marker-alt"></i>
               </div>
@@ -134,8 +23,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 contact phone">
-            <div class="row">
+          <div class="flex-1 contact phone">
+            <div class="flex space-x-2">
               <div class="col-5 icon"><i class="fas fa-phone"></i></div>
               <div class="col-7">
                 <span class="option">CALL US TODAY</span>
@@ -143,8 +32,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 contact email">
-            <div class="row">
+          <div class="flex-1 contact email">
+            <div class="flex space-x-2">
               <div class="col-2 icon"><i class="far fa-envelope"></i></div>
               <div class="col">
                 <span class="option">EMAIL US NOW</span>
@@ -152,7 +41,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 social">
+          <div class="flex-2 social">
             <div class="social-circle"><i class="fab fa-facebook"></i></div>
             <div class="social-circle"><i class="fab fa-twitter"></i></div>
             <div class="social-circle"><i class="fab fa-youtube"></i></div>
@@ -163,17 +52,19 @@
     </div>
     <div id="navbar">
       <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="site-logo">
+        <div class="flex justify-content-between">
+          <div class="site-logo flex-1">
             <img src="assets/images/BRS.png" alt="" />
           </div>
-          <div class="site-nav">
+          <div class="site-nav flex-2">
             <i class="fas fa-bars" id="navigationToogle"></i>
             <ul class="navbar navmenu">
               <li class="nav-item active">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Services</a>
               </li>
@@ -186,8 +77,12 @@
         </div>
       </div>
       <ul class="mobilemenu">
-        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
@@ -371,7 +266,9 @@
                 </div>
 
                 <div class="contact-form-row">
-                  <button class="button-primary button">SEND YOUR MESSAGE</button>
+                  <button class="button-primary button">
+                    SEND YOUR MESSAGE
+                  </button>
                 </div>
               </form>
             </div>
@@ -380,14 +277,14 @@
       </section>
     </div>
 
-    <footer id="footer">
+    <div id="footer" class="mt-32">
       <div id="newsletter">
-        <div class="container shadow">
-          <div class="row">
-            <div class="col-md-1">
+        <div class="container w-2/3 shadow">
+          <div class="md:grid grid-flow-col gap-2">
+            <div class="image">
               <img src="assets/images/icon-envelope-1 1.png" />
             </div>
-            <div class="col-md-8" style="padding-left: 35px">
+            <div class="">
               <span class="title"
                 >Sign Up For
                 <span class="highlight">FREE</span> Consultation</span
@@ -397,56 +294,50 @@
                 elit tellus, luctus nec ullamcorper</span
               >
             </div>
-            <div class="col-md-3">
+            <div class="col-end-7">
               <button class="button-primary button">contact us</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="container footer-container">
-        <div class="row">
-          <div class="col-md-3">
-            <p class="footer-title">BSR</p>
-            <div class="row">
-              <div class="col-1"><i class="far fa-building"></i></div>
-              <div class="col">
-                <span class="list-items">Detheme Headquarter</span>
-              </div>
+      <div class="container footer-container pt-28">
+        <div class="md:grid grid-cols-4 gap-2">
+          <div class="column1">
+            <p class="footer-title mb-4">BSR</p>
+            <div class="flex space-x-2 pt-6">
+              <i class="far fa-building"></i>
+              <span class="list-items">Detheme Headquarter</span>
             </div>
-            <div class="row">
-              <div class="col-1"><i class="fas fa-map-pin"></i></div>
-              <div class="col">
-                <span class="list-items"
-                  >1428 Callison Laney Buoy Building 201/VRY Virginia, VA
-                  22902</span
-                >
-              </div>
+            <div class="flex space-x-2 pt-4">
+              <i class="fas fa-map-pin"></i>
+              <span class="list-items"
+                >1428 Callison Laney Buoy Building 201/VRY Virginia, VA
+                22902</span
+              >
             </div>
-            <div class="row">
-              <div class="col-1"><i class="fas fa-phone"></i></div>
-              <div class="col">
-                <span class="list-items">+62 9282739-44-539</span>
-              </div>
+            <div class="flex space-x-2 pt-4">
+              <i class="fas fa-phone"></i>
+              <span class="list-items">+62 9282739-44-539</span>
             </div>
-            <div class="row">
+            <div class="flex space-x-2 pt-4">
               <div class="col-1"><i class="far fa-envelope"></i></div>
               <div class="col">
                 <span class="list-items">contact@example.com</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <p class="footer-title">Useful Links</p>
+          <div class="column2">
+            <h1 class="footer-title mb-4">Useful Links</h1>
             <ul>
-              <li><a href="#">About Us</a></li>
+              <li><a href="about.html">About Us</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Our Process</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col-md-3">
-            <p class="footer-title">Recent Posts</p>
+          <div class="column-3">
+            <h1 class="footer-title mb-4">Recent Posts</h1>
             <ul>
               <li class="footer-list">
                 <a href="#">Low water Pressure - What can I do?</a>
@@ -462,8 +353,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3">
-            <p class="footer-title">Newsletter</p>
+          <div class="column-4">
+            <h1 class="footer-title mb-4">Newsletter</h1>
             <p>
               Subscribe to our newsletter for discounts, specials, and more! We
               value your privacy.
@@ -475,16 +366,16 @@
               placeholder="Enter your Email"
               class="input-field"
             />
-            <button class="button button-primary">view more</button>
+            <button class="mt-6 button button-primary">view more</button>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
     <div id="copyright">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">© Copyright 2021. All Right Reserved.</div>
-          <div class="col-md-6 social">
+        <div class="md:grid grid-cols-2 gap-4">
+          <div>© Copyright 2021. All Right Reserved.</div>
+          <div class="col-end-7 social">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-youtube"></i>

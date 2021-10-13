@@ -1,0 +1,85 @@
+
+#footer {
+    position: relative;
+    background: #171732;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    color: #FFFFFF;
+}
+#footer #newsletter {
+    position: absolute;
+    width: 100%;
+    top:-83px;
+    z-index: 99;
+}
+
+#newsletter .container {
+    background: white;
+    height: 100%;
+    color: #000000;
+    padding: 35px;
+}
+#newsletter img {
+    margin-left:30px
+}
+#newsletter .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #171732;
+}
+#newsletter .subtitle {
+    color: #424662;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 0
+}
+#footer .footer-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+#footer .row {
+    padding-top: 15px
+}
+.list-items {
+    font-size: 14px;
+    line-height: 17px;
+}
+#footer ul {
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+ul li {
+    padding-top: 15px
+}
+li a {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+}
+#footer .subtitle {
+    display: block;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.input-field {
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 12px 20px;
+    color: #000000;
+    border: 0;
+    outline: none;
+}
+#copyright {
+    background: #060618;
+    color: white;
+}
+#copyright .container {
+    padding: 35px 0;
+}
+#copyright .social {
+    text-align: right;
+    letter-spacing: 15px
+}

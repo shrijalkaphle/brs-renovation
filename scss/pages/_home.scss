@@ -1,16 +1,4 @@
-@font-face {
-  font-family: "Barlow Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Barlow Regular"),
-    url("../assets/fonts/Barlow/Barlow-Regular.woff") format("woff");
-}
 
-body {
-  font-family: "Barlow Regular", sans-serif !important;
-  width: 100%;
-  overflow-x: hidden;
-}
 #navbar {
   height: 100px !important;
   position: sticky;
@@ -109,7 +97,6 @@ body {
   color: #dadbe7;
 }
 .button {
-  margin-top: 35px;
   padding: 20px 35px;
   border-radius: 999px;
   text-transform: uppercase;
@@ -150,10 +137,7 @@ body {
 #services {
   text-align: center;
 }
-#services .title {
-  padding: 100px 100px;
-  padding-bottom: 0px;
-}
+
 .highlight {
   color: #f6aa26;
 }
@@ -193,7 +177,6 @@ body {
 }
 #whatwedo {
   position: relative;
-  margin-top: 100px;
   background: #163256;
   overflow: hidden;
   color: white;
@@ -234,12 +217,7 @@ body {
   height: 20px;
   border-bottom: 2px solid #dadbe7;
 }
-#chooseus {
-  padding: 100px 0;
-}
-#chooseus img {
-  padding-top: 100px;
-}
+
 #chooseus .button {
   margin-top: 0;
 }
@@ -274,7 +252,6 @@ body {
 }
 #project {
   background: #f4f5fb;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 #project .subheading {
@@ -382,8 +359,6 @@ body {
 }
 #article {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 250px;
 }
 .blog-row {
   padding-top: 80px;
@@ -568,4 +543,13 @@ li a {
     margin-top: 10px;
     text-align: center;
   }
+}
+
+
+.history-list-style{
+  height: 4px;
+  width: 35px;
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: $primary-gold;
 }

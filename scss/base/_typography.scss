@@ -1,3 +1,13 @@
-body{
-    color: $text-primary;
-}
+@font-face {
+    font-family: "Barlow Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Barlow Regular"),
+      url("../assets/fonts/Barlow/Barlow-Regular.woff") format("woff");
+  }
+  
+  body {
+    font-family: "Barlow Regular", sans-serif !important;
+    width: 100%;
+    overflow-x: hidden;
+  }
